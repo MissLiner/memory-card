@@ -5,7 +5,7 @@ function App() {
   return (
     <div>
       <h1>Memory Card</h1>
-      {Gameboard}
+      <Gameboard />
     </div>
   );
 }
