@@ -5,37 +5,30 @@ import Gameboard from './components/Gameboard';
 
 function App() {
   const [score, setScore] = useState(0);
-  const [cardsInPlay, setCardsInPlay] = useState([]);
-  // const [status, setStatus] = useState('start');
+  const [deck, setDeck] = useState([]);
 
   useEffect(() => {
-    resetCardsInPlay();
+    fillDeck();
   }, []);
 
-  const emptyCardsInPlay = () => {
-    const arrLength = cardsInPlay.length;
-    setCardsInPlay(cardsInPlay.splice(0, arrLength));
+  const emptyDeck = () => {
+    const arrLength = deck.length;
+    setDeck(deck.splice(0, arrLength));
   }
-  const resetCardsInPlay = () => {
+  const fillDeck = () => {
     const newCards = flagArray.map(flag => flag.name)
-    setCardsInPlay(cardsInPlay.concat(newCards));
+    setDeck(deck.concat(newCards));
   }
 
   const playCard = (e) => {
-    let isNew = false;
-    const cardPlayed = e.target.id;
-    for(let i=0; i < cardsInPlay.length; i++) {
-      if(cardPlayed === cardsInPlay[i].text) {
-        setCardsInPlay(cardsInPlay.splice(i, 1));
-        setScore(score + 1);
-        isNew = true;
-        return;
-      }
-    }
-    if(!isNew) {
+    const cardClicked = e.target.id;
+    if(deck.includes(cardClicked)) {
+      setDeck(deck.filter(card => card !== cardClicked));
+      setScore(score + 1);
+    } else {
       setScore(0);
-      emptyCardsInPlay();
-      resetCardsInPlay();
+      emptyDeck();
+      fillDeck();
     }
   }
 

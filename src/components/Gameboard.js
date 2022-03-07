@@ -30,7 +30,7 @@ const Gameboard = (props) => {
             data-arrindex={flag.arrindex}
             onClick={clickFunc}>
             <img 
-            id={flag.name} 
+              id={flag.name} 
               className="flagImg" 
               src={flag.image} 
               alt={flag.text + " image"}>
