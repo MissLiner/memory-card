@@ -1,6 +1,6 @@
 import React from "react";
 import uniqid from "uniqid";
-import { flagArray } from "./FlagArray";
+import { flagArray } from "./flagArray";
 import "../App.css"
 
 const Gameboard = (props) => {
@@ -26,7 +26,9 @@ const Gameboard = (props) => {
           <div
             id={flag.text} 
             className="cardBox" 
-            key={keyID}>
+            key={keyID}
+            data-arrindex={flag.arrindex}
+            onClick={clickFunc}>
             <img 
               className="flagImg" 
               src={flag.image} 
