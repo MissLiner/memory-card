@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css';
 import { flagArray } from './components/flagArray';
 import Gameboard from './components/Gameboard';
@@ -8,12 +8,17 @@ function App() {
   const [cardsInPlay, setCardsInPlay] = useState([]);
   // const [status, setStatus] = useState('start');
 
+  useEffect(() => {
+    resetCardsInPlay();
+  }, []);
+
   const emptyCardsInPlay = () => {
     const arrLength = cardsInPlay.length;
     setCardsInPlay(cardsInPlay.splice(0, arrLength));
   }
   const resetCardsInPlay = () => {
-    setCardsInPlay(cardsInPlay.concat(flagArray));
+    const newCards = flagArray.map(flag => flag.name)
+    setCardsInPlay(cardsInPlay.concat(newCards));
   }
 
   const playCard = (e) => {
