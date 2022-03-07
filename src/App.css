@@ -1,11 +1,25 @@
 * {
   margin: auto;
+  text-align: center;
 }
 
 .cardsBox {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  height: 800px;
-  width: 800px;
+  height: 650px;
+  width: 650px;
+}
+.cardBox {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  height: 150px;
+  width:150px;
+}
+.flagImg {
+  border: solid;
+  border-color: black;
+  height: 95px;
+  max-width: 140px;
 }

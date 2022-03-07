@@ -42,7 +42,7 @@ const Gameboard = (props) => {
       const keyID = uniqid();
       return(
         <div className="cardBox" key={keyID}>
-          <img src={flag.image} alt={flag.text + " image"}></img>
+          <img className={flag.text + " flagImg"} src={flag.image} alt={flag.text + " image"}></img>
           <div>{flag.text}</div>
         </div>
       )
