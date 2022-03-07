@@ -2,7 +2,7 @@ import React from "react";
 import uniqid from "uniqid";
 import AntiguaAndBarbuda from "../resources/AntiguaAndBarbuda.png";
 import Argentina from "../resources/Argentina.png";
-import Guadaloupe from "../resources/Guadaloupe.png";
+import Guadeloupe from "../resources/Guadeloupe.png";
 import Japan from "../resources/Japan.png";
 import Kazakhstan from "../resources/Kazakhstan.png";
 import Kiribati from "../resources/Kiribati.png";
@@ -22,7 +22,7 @@ const Gameboard = (props) => {
   const flagsInfo = [
     {image: AntiguaAndBarbuda, text: "Antigua & Barbuda"},
     {image: Argentina, text: "Argentina"},
-    {image: Guadaloupe, text: "Guadaloupe"},
+    {image: Guadeloupe, text: "Guadeloupe"},
     {image: Japan, text: "Japan"},
     {image: Kazakhstan, text: "Kazakhstan"},
     {image: Kiribati, text: "Kiribati"},
