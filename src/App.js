@@ -23,13 +23,12 @@ function App() {
     if(!isNew) {
       setScore(0);
     }
-    
   }
 
   return (
     <div>
       <h1>Memory Card</h1>
-      <Gameboard clickFunc={playCard} />
+      <Gameboard clickFunc={playCard} score={score} />
     </div>
   );
 }

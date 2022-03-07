@@ -4,7 +4,7 @@ import { flagArray } from "./flagArray";
 import "../App.css"
 
 const Gameboard = (props) => {
-  const { clickFunc } = props;
+  const { clickFunc, score } = props;
 
   const shuffleArray = (array) => {
     const shuffledArray = array;
@@ -24,7 +24,7 @@ const Gameboard = (props) => {
         const keyID = uniqid();
         return(
           <div
-            id={flag.text} 
+            id={flag} 
             className="cardBox" 
             key={keyID}
             data-arrindex={flag.arrindex}
