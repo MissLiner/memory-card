@@ -5,16 +5,23 @@ import Gameboard from './components/Gameboard';
 
 function App() {
   const [score, setScore] = useState(0);
+  const [cardsInPlay, setCardsInPlay] = useState([]);
   // const [status, setStatus] = useState('start');
 
-  let cardsInPlay = flagArray;
+  const emptyCardsInPlay = () => {
+    const arrLength = cardsInPlay.length;
+    setCardsInPlay(cardsInPlay.splice(0, arrLength));
+  }
+  const resetCardsInPlay = () => {
+    setCardsInPlay(cardsInPlay.concat(flagArray));
+  }
 
   const playCard = (e) => {
     let isNew = false;
     const cardPlayed = e.target.id;
     for(let i=0; i < cardsInPlay.length; i++) {
       if(cardPlayed === cardsInPlay[i].text) {
-        cardsInPlay.splice(i, 1);
+        setCardsInPlay(cardsInPlay.splice(i, 1));
         setScore(score + 1);
         isNew = true;
         return;
@@ -22,6 +29,8 @@ function App() {
     }
     if(!isNew) {
       setScore(0);
+      emptyCardsInPlay();
+      resetCardsInPlay();
     }
   }
 
