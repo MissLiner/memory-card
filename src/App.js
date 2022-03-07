@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { flagArray } from './components/flagArray';
 import Gameboard from './components/Gameboard';
+import Scoreboard from './components/Scoreboard';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -35,6 +36,7 @@ function App() {
   return (
     <div>
       <h1>Memory Card</h1>
+      <Scoreboard score={score} />
       <Gameboard clickFunc={playCard} score={score} />
     </div>
   );
