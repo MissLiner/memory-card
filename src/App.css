@@ -49,3 +49,7 @@
 .scoreSubdiv {
   margin: 0 0 0 0;
 }
+.flagText {
+  position: relative;
+  bottom: -10px;
+}

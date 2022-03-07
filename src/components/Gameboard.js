@@ -34,7 +34,7 @@ const Gameboard = (props) => {
               src={flag.image} 
               alt={flag.text + " image"}>
             </img>
-            <div data-name={flag.name} >{flag.text}</div>
+            <div className="flagText" data-name={flag.name} >{flag.text}</div>
           </div>
         )
       })
