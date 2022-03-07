@@ -41,8 +41,15 @@ const Gameboard = (props) => {
     flagsInfo.map((flag) => {
       const keyID = uniqid();
       return(
-        <div className="cardBox" key={keyID}>
-          <img className={flag.text + " flagImg"} src={flag.image} alt={flag.text + " image"}></img>
+        <div
+          id={flag.text} 
+          className="cardBox" 
+          key={keyID}>
+          <img 
+            className="flagImg" 
+            src={flag.image} 
+            alt={flag.text + " image"}>
+          </img>
           <div>{flag.text}</div>
         </div>
       )
