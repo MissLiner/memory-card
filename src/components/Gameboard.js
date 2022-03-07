@@ -23,7 +23,7 @@ const Gameboard = (props) => {
     )
 
   return(
-    <div id="cardsBox">
+    <div className="cardsBox">
       {renderedFlags}
     </div>
   )

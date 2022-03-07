@@ -4,4 +4,8 @@
 
 .cardsBox {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  height: 800px;
+  width: 800px;
 }
