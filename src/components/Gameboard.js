@@ -24,18 +24,17 @@ const Gameboard = (props) => {
         const keyID = uniqid();
         return(
           <div
-            // id={flag.name} 
             className="cardBox" 
             key={keyID}
-            data-arrindex={flag.arrindex}
+            data-name={flag.name} 
             onClick={clickFunc}>
             <img 
-              id={flag.name} 
+              data-name={flag.name} 
               className="flagImg" 
               src={flag.image} 
               alt={flag.text + " image"}>
             </img>
-            <div>{flag.text}</div>
+            <div data-name={flag.name} >{flag.text}</div>
           </div>
         )
       })
