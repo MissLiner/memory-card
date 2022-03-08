@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import './App.css';
 import { flagArray } from './components/flagArray';
 import Gameboard from './components/Gameboard';
+import Greyout from './components/Greyout';
 import Scoreboard from './components/Scoreboard';
 import ShowMessage from './components/ShowMessage.js'
 
@@ -58,6 +59,7 @@ function App() {
       <Scoreboard score={score} />
       <Gameboard clickFunc={playCard} score={score} />
       <ShowMessage message={message} clickFunc={clearMessage} />
+      <Greyout message={message} />
     </div>
   );
 }

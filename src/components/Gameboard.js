@@ -4,7 +4,7 @@ import { flagArray } from "./flagArray";
 import "../App.css"
 
 const Gameboard = (props) => {
-  const { clickFunc, score } = props;
+  const { clickFunc } = props;
 
   const shuffleArray = (array) => {
     const shuffledArray = array;
