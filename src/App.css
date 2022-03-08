@@ -15,34 +15,34 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
-  height: 650px;
-  width: 650px;
+  height: 630px;
+  width: 630px;
 }
 .cardBox {
   background-color: black;
   color: white;
   font-weight: bold;
-  height: 150px;
-  width:150px;
+  height: 145px;
+  width:145px;
 }
 .filter {
   background-color: black;
-  filter:blur(5px);
+  filter:blur(2px);
   height: 100%;
-  opacity: 0.2;
+  opacity: 0.4;
   position:absolute;
   left: -10%;
   right: -10%;
-  top: -1%;
-  height: 105%;
-  width: 110%;
+  top: 0;
+  height: 100%;
+  width: 102%;
   z-index: 1000;
 }
 .flagImg {
   border: solid;
   border-color: black;
-  height: 95px;
-  max-width: 140px;
+  height: 90px;
+  max-width: 135px;
 }
 .scoreboard {
   display: flex;
