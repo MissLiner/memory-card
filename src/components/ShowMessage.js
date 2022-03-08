@@ -10,11 +10,15 @@ const ShowMessage = (props) => {
     startGame: "Welcome to the Sun Flag Memory Card game! You get one point for each card you click on, as long as you don't click the same card twice. Happy clicking!!",
     none: "",
   }
-  return(
-    <div className="messageBox">
-      <div className='messageText'>{messages[message]}</div>
-      <button className="messageBtn" onClick={clickFunc}>Let's Play!</button>
-    </div>
-  )
+  if(message !== "none") {
+    return(
+      <div className="messageBox">
+        <div className='messageText'>{messages[message]}</div>
+        <button className="messageBtn" onClick={clickFunc}>Let's Play!</button>
+      </div>
+    )
+  } else {
+    return null;
+  }
 }
 export default ShowMessage;
