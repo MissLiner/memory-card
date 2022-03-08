@@ -56,26 +56,28 @@
 .messageBox {
   background-color: rgb(250, 213, 0);
   outline-style:dashed;
-  outline-width: 80px;
+  outline-width: 50px;
   outline-color: rgb(250, 213, 0);
   border-radius: 50%;
   font-size: larger;
-  font-weight: bold;
   position:absolute;
   left: 35%;
   top: 20%;
-  height: 400px; 
-  width: 400px;
+  height: 325px; 
+  width: 325px;
+}
+.messageTitle {
+  font-weight: bold;
+  margin-top: 20%;
 }
 .messageText {
-  margin-top: 32%;
-  width: 300px;
+  margin-top: 5%;
+  width: 275px;
 }
 .messageBtn {
   background-color: orangered;
   border-color: black;
   border-radius: 15px;
-  font-size:x-large;
-  font-weight: bolder;
-  margin-top: 10%;
+  font-size:larger;
+  margin-top: 5%;
 }
