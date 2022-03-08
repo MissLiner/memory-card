@@ -63,7 +63,7 @@
   position:absolute;
   left: 0;
   right: 0;
-  top: 20%;
+  top: 150px;
   height: 325px; 
   width: 325px;
 }
@@ -81,4 +81,49 @@
   border-radius: 15px;
   font-size:larger;
   margin-top: 5%;
+}
+@media only screen and (min-width: 1800px) {
+  h1 {
+    font-size: 40px;
+  }
+  .cardsBox {
+    height: 1000px;
+    width: 1000px;
+  }
+  .cardBox {
+    height: 240px;
+    width:240px;
+  }
+  .flagImg {
+    height: 145px;
+    max-width: 200px;
+  }
+  .scoreboard {
+    top: 15px;
+    width: 900px;
+  }
+  .scoreDiv {
+    font-size: 32px;
+    width: 300px;
+  }
+  .flagText {
+    bottom: -20px;
+    font-size: 32px;
+  }
+  .messageBox {
+    outline-width: 100px;
+    top: 200px;
+    height: 500px; 
+    width: 500px;
+  }
+  .messageTitle {
+    font-size: 32px;
+  }
+  .messageText {
+    font-size: 32px;
+    width: 450px;
+  }
+  .messageBtn {
+    font-size:36px  ;
+  }
 }

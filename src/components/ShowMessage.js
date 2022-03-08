@@ -7,7 +7,7 @@ const ShowMessage = (props) => {
     win1: ["WIN!", "You made it through the whole deck! Starting with a new deck, can you do it again?"],
     win2: ["WIN 2!", "You did it again! Can you run through the deck a THIRD time?!?"],
     win3: ["WIN 3!", "You're either a memory genius, or you're cheating! Either way, you're starting back at 0"],
-    startGame: ["Welcome!",  "How to play the Sun Flag Memory Card game: Click on a card, get a point, just don't click the same card twice. Happy clicking!"],
+    startGame: ["Welcome!",  "How to play the Sun Flag Memory Card game: click on a card, get a point, just don't click the same card twice. Happy clicking!"],
     none: ["", ""]
   }
   if(message !== "none") {
