@@ -53,7 +53,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="mainBox">
       <h1>Memory Card</h1>
       <Scoreboard score={score} />
       <Gameboard clickFunc={playCard} score={score} />
