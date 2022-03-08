@@ -12,8 +12,8 @@ const ShowMessage = (props) => {
   }
   return(
     <div className="messageBox">
-      {messages[message]}
-      <button onClick={clickFunc}>Let's Play!</button>
+      <div className='messageText'>{messages[message]}</div>
+      <button className="messageBtn" onClick={clickFunc}>Let's Play!</button>
     </div>
   )
 }
