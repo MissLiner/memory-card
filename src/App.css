@@ -53,4 +53,16 @@
   position: relative;
   bottom: -10px;
 }
-.
+.messageBox {
+  background-color: rgb(250, 213, 0);
+  border: solid;
+  color: rgb(113, 113, 113);
+  font-size: larger;
+  font-weight: bold;
+  padding: 20px;
+  position:absolute;
+  left: 35%;
+  top: 20%;
+  height: fit-content;
+  width: 30%;
+}

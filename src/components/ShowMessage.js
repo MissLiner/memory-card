@@ -1,5 +1,5 @@
 import React from 'react';
-import 'App.css';
+import '../App.css';
 
 const ShowMessage = (props) => {
   const { message, clickFunc } = props;
@@ -11,7 +11,7 @@ const ShowMessage = (props) => {
     none: "",
   }
   return(
-    <div>
+    <div className="messageBox">
       {messages[message]}
       <button onClick={clickFunc}>Let's Play!</button>
     </div>
