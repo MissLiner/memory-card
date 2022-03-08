@@ -27,12 +27,15 @@
 }
 .filter {
   background-color: black;
-  filter:blur(60%);
+  filter:blur(5px);
   height: 100%;
   opacity: 0.2;
   position:absolute;
-  top: 0;
-  width: 100%;
+  left: -10%;
+  right: -10%;
+  top: -1%;
+  height: 105%;
+  width: 110%;
   z-index: 1000;
 }
 .flagImg {
