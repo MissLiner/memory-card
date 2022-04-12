@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="mainBox">
-      <h1>Memory Card</h1>
+      <h1 className="mainBox-title">Memory Card</h1>
       <Scoreboard score={score} />
       <Gameboard clickFunc={playCard} score={score} />
       <ShowMessage message={message} clickFunc={clearMessage} />

@@ -4,6 +4,11 @@
   text-align: center;
 }
 .mainBox {
+  display: grid;
+  grid-template:
+    "cscore title bscore" min-content
+    "card card card" min-content
+    / 1fr 2fr 1fr;
   margin: 0;
   position: absolute;
   top: 50%;
@@ -11,10 +16,14 @@
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.mainBox-title {
+  grid-area: title;
+}
 
 /* GAMEBOARD */
 .cardsBox {
   display: grid;
+  grid-area: card;
   grid-template-columns: repeat(4, 1fr);
   grid-template-columns: repeat(4, 1fr);
   height: 630px;
@@ -49,24 +58,30 @@
   margin-left: auto;
   margin-right: auto;
   position: absolute;
-  top: 10px;
-  width: 600px;
+  top: 20px;
+  width: 100%;
 }
 .scoreDiv {
   display: flex;
   justify-content: center;
   margin: 0;
+  height: 100%;
   width: 150px;
 }
 .currentScore {
+  grid-area: cscore;
   justify-content: flex-start;
 }
 .bestScore {
+  grid-area: bscore;
   justify-content: flex-end;
 }
 .scoreDiv-title {
   font-weight: bold;
   margin: 0 0 0 0;
+}
+.scoreDiv-score {
+  margin: 0 0 0 .5em;
 }
 
 /* MESSAGE SCREEN */
