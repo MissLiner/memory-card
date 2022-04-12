@@ -15,12 +15,12 @@ const Scoreboard = (props) => {
   return(
     <div className="scoreboard">
       <div className="scoreDiv currentScore">
-        <div className="scoreSubdiv">Current Score:</div>
-        <div className="scoreSubdiv">{score}</div>
+        <div className="scoreDiv-title">Current Score: </div>
+        <div className="scoreSiv-score">{score}</div>
       </div>
       <div className="scoreDiv bestScore">
-        <div className="scoreSubdiv">High Score:</div>
-        <div className="scoreSubdiv">{highScore}</div>
+        <div className="scoreDiv-title">High Score: </div>
+        <div className="scoreDiv-score">{highScore}</div>
       </div>
     </div>
   )

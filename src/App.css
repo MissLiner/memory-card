@@ -64,7 +64,8 @@
 .bestScore {
   justify-content: flex-end;
 }
-.scoreSubdiv {
+.scoreDiv-title {
+  font-weight: bold;
   margin: 0 0 0 0;
 }
 
