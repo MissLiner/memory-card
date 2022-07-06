@@ -192,7 +192,7 @@
         "title" 
         "card" 
         "scoreboard";
-      margin-top: 25%;
+      margin-top: 20%;
       position: relative;
       width: 95%; min-width: 305px;
       top: unset;
@@ -213,7 +213,7 @@
       width: unset;
     }
     .scoreDiv {
-      font-size: 24px;
+      font-size: 20px;
       width: auto;
     }
     .currentScore {
@@ -248,7 +248,7 @@
  
     }
     .messageBox {
-      outline-width: 30px;
+      outline-width: 20px;
       top: 120px;
       height: 240px; 
       width: 240px;
