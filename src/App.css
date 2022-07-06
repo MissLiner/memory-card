@@ -114,24 +114,29 @@
   z-index: 1001;
 }
 .messageTitle {
+  color: white;
+  font-size: 36px;
   font-weight: bold;
-  margin-top: 20%;
+  margin-top: 22%;
 }
 .messageText {
-  margin-top: 5%;
+  margin-top: 20px;
   width: 275px;
 }
 .messageBtn {
-  background-color: orangered;
-  border-color: black;
+  background-color: rgb(255, 143, 14);
+  color: white;
+  border-color: white;
   border-radius: 15px;
   font-size:larger;
-  margin-top: 5%;
+  font-weight: bold;
+  margin-top: 30px;
+  padding: 7px;
 }
 
 /* LARGER SCREEN */
 @media only screen and (min-width: 1800px) {
-  h1 {
+  .mainBox-title {
     font-size: 40px;
   }
   .cardsBox {
@@ -166,6 +171,7 @@
   }
   .messageTitle {
     font-size: 32px;
+    margin-top: 10px;
   }
   .messageText {
     font-size: 32px;
@@ -175,3 +181,94 @@
     font-size:36px  ;
   }
 }
+@media only screen 
+  and (max-device-width: 680px) {
+    .mainBox-title {
+      font-size: 30px;
+    }
+    .mainBox {
+      grid-row-gap: 20px;
+      grid-template:
+        "title" 
+        "card" 
+        "scoreboard";
+      margin-top: 25%;
+      position: relative;
+      width: 95%; min-width: 305px;
+      top: unset;
+      left: 2.5%;
+      -ms-transform: unset;
+      transform: unset;
+    }
+    .scoreboard {
+      flex-direction: column;
+      grid-area: scoreboard;
+      justify-content: unset;
+      left: unset;
+      right: unset;
+      margin-left: unset;
+      margin-right: unset;
+      position: unset;
+      top: unset;
+      width: unset;
+    }
+    .scoreDiv {
+      font-size: 24px;
+      width: auto;
+    }
+    .currentScore {
+      justify-content: right;
+    }
+    .bestScore {
+      justify-content: right;
+    }
+
+    .cardsBox {
+      grid-area: card;
+      position: relative;
+      height: 95vw; min-height: 290px;
+      width: 95vw; min-width: 290px;
+    }
+    .cardBox {
+      display: flex;
+      flex-direction: column;
+      height: 23vw; min-height: 70px;
+      width: 23vw; min-width: 70px;
+    }
+    .flagImg {
+      height: 60%;
+      max-width: 21vw;
+      margin-top: 1px;
+      margin-bottom: 0px;
+    }
+    .flagText {
+      bottom: unset; 
+      font-size: 12px;
+      font-weight: 400;
+ 
+    }
+    .messageBox {
+      outline-width: 30px;
+      top: 120px;
+      height: 240px; 
+      width: 240px;
+    }
+    .messageTitle {
+      font-size: 22px;
+      margin-top: 50px;
+    }
+    .messageText {
+      font-size: 16px;
+      margin-top: 20px;
+      width: 210px;
+    }
+    .messageBtn {
+      font-size: 18px;
+      margin-top: 25px;
+      padding: 5px;
+    }
+    .filter {
+      height: 110%;
+      top: -5%;
+    }
+  }
